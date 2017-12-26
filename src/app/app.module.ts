@@ -12,13 +12,16 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {NavbarComponent} from './navbar/navbar.component';
 import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import { AboutComponent } from './views/about/about.component';
+import { ApitestComponent } from './views/apitest/apitest.component';
+import {ExampleService} from "./services/Example.service";
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    AboutComponent
+    AboutComponent,
+    ApitestComponent
   ],
   imports: [
     BrowserModule,
@@ -31,6 +34,7 @@ import { AboutComponent } from './views/about/about.component';
     NgbModule.forRoot()
   ],
   providers: [
+    ExampleService
   ],
   bootstrap: [AppComponent]
 })

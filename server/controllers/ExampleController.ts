@@ -6,11 +6,14 @@ export class SettingsController {
 
   @Get("/")
   getAll(@Req() request: any, @Res() response: any) {
-    return response.json({ message: 'Get all works!' });
+    return {
+      message: 'Api call works!',
+      date: Date.now()
+    };
   }
 
   @Post('/')
   post(@Req() request: any, @Res() response: any) {
-    return response.json({ message: 'This works as well!' });
+    return response.json({message: 'This works as well!'});
   }
 }
