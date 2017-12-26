@@ -2,7 +2,10 @@ import * as express from 'express';
 import 'reflect-metadata';
 import {useExpressServer} from "routing-controllers";
 import * as bodyParser from "body-parser";
+import config from './config/config';
 const path = require('path');
+
+console.log(config);
 
 const app: express.Express = express();
 

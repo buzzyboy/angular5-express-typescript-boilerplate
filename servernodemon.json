@@ -4,5 +4,8 @@
   "verbose": true,
   "exec": "ts-node server/server.app.ts",
   "watch": ["server"],
-  "ext": "ts"
+  "ext": "ts",
+  "env": {
+    "NODE_ENV": "development"
+  }
 }

@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "dev": "nodemon --config ./servernodemon.json & ng build --watch",
-    "dev-server": "concurrently --kill-others \"npm run watch-dev-server\" \"nodemon --config ./servernodemon.json\" ",
+    "dev-server": "nodemon --config ./servernodemon.json",
     "start": "ng build && npm run dev-server",
     "build": "ng build",
     "test": "ng test",
